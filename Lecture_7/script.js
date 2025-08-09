@@ -63,5 +63,15 @@ console.log(para.classList);
 para.classList.add("newPara");
 para.classList.remove("para");
 
+let newElm = document.createElement("li");
+newElm.innerText = "item 4";
+newElm.style.color = "purple";
+
+let rootElm = document.querySelector("#listItem");
+rootElm.appendChild(newElm);
+
+rootElm.removeChild(rootElm.lastChild);
+
+
 
 
